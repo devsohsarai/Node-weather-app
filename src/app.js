@@ -30,7 +30,7 @@ app.get('',(req,res) => {
 app.get('/about',(req,res) => {
     res.render('about',{
         title:"About Us",
-        created_by : "Nicy"
+        created_by : "Global360 Pvt Ltd"
     });
 })
 
