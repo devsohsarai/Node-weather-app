@@ -9,7 +9,6 @@ const forecast = (lat,long,callback) => {
        } else if(body.error) {
         callback("Unable to find the weather,Please try with different lat and long",undefined)
        } else {
-          console.log(body.daily.data)
           const temperature = body.currently.temperature
           const temperatureMin = body.daily.data[0].temperatureMin
           const temperatureMax = body.daily.data[0].temperatureMax
